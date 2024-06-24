@@ -16,7 +16,7 @@ function Navbar(props) {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="container mx-auto flex items-center justify-between p-4">
+      <div className="mx-auto flex items-center justify-between p-4">
         <div className="text-2xl font-bold">
           FULL$TOCK
         </div>
