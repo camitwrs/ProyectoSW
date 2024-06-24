@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar.jsx'
 import Sidebar from './components/Sidebar.jsx'
+import InventarioPage from './pages/InventarioPage.jsx';
 //import CajaPage from './pages/CajaPage.jsx'
 //import PersonasPage from './pages/PersonasPage.jsx'
-import ReportesPage from './pages/ReportesPage.jsx';
+//import ReportesPage from './pages/ReportesPage.jsx';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Sidebar />  
       <div className="flex-grow">
         <Navbar username='nombre_usuario' />
-        <ReportesPage />
+        <InventarioPage />
       </div>
     </div>
   );
