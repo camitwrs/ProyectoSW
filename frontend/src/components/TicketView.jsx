@@ -14,15 +14,18 @@ function TicketView({ ticketItems }) {
                 <div className="flex items-center space-x-2">
                     <h1>Escanear producto:</h1>
                     <button>
-                        <CiBarcode className="text-3xl" />
+                        <CiBarcode className="size-12" />
                     </button>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center">
                     <h1>Ingresar código de producto:</h1>
                     <input type="text" className="w-32 p-2 rounded-md border border-gray-300" />
-                    <button>
-                        <FaMicrophone className="text-2xl" />
-                    </button>
+                    <div className="flex items-center space-x-1 ml-auto">
+                        <h1>Usar voz</h1>
+                        <button className="flex items-center space-x-1">
+                            <FaMicrophone className="size-9" />
+                        </button>
+                    </div>
                 </div>
             </div>
 
