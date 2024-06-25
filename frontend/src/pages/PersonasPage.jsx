@@ -4,9 +4,9 @@ import SupplierView from '../components/SupplierView';
 
 function PersonasPage() {
     return (
-        <div className='min-h-screen flex flex-col'>
-            <div className="p-4 flex-1">
-                <div className="bg-gray-200 rounded-lg p-4 flex flex-col h-full">
+        <div className='max-h-screen flex flex-col'>
+            <div className="p-4 flex-1 flex">
+                <div className="bg-gray-200 rounded-lg p-4 flex flex-col h-full w-full">
                     <h1 className="text-left text-2xl font-bold mb-4">Configuración</h1>
                     <div className="flex flex-1 justify-between">
                         <div className="w-1/2 pr-2">

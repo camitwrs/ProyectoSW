@@ -3,7 +3,7 @@ import { CiBarcode } from 'react-icons/ci';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoTrashOutline } from 'react-icons/io5';
 
-function TicketView({ ticketItems }) {
+function TicketView({ ticketItems, removeFromTicket }) {
     const subtotal = ticketItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
     const discount = subtotal * 0.1; // 10% discount
     const total = subtotal - discount;
@@ -42,8 +42,8 @@ function TicketView({ ticketItems }) {
                             <span className="flex-1 text-center text-black">{item.quantity}</span>
                             <div className="flex-1 flex justify-end items-center space-x-2 text-black">
                                 <span>${(item.price * item.quantity).toFixed(2)}</span>
-                                <button className="text-red-600 size-7">
-                                    <IoTrashOutline />
+                                <button className="text-red-600" onClick={() => removeFromTicket(item.id)}>
+                                    <IoTrashOutline className='size-6'/>
                                 </button>
                             </div>
                         </div>

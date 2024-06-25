@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Product from "./Product";
 
-function ProductView({ products }) {
+function ProductView({ products, addToTicket }) {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
@@ -38,7 +38,11 @@ function ProductView({ products }) {
       <div className="bg-gray-100 rounded-lg p-4">
         <div className="grid grid-cols-3 gap-4">
           {currentProducts.map((product) => (
-            <div key={product.id} className="bg-white rounded-lg p-4 border border-gray-300">
+            <div
+              key={product.id}
+              className="bg-white rounded-lg p-4 border border-gray-300 hover:bg-orange-200 cursor-pointer"
+              onClick={() => addToTicket(product)}
+            >
               <Product name={product.name} code={product.code} image={product.image} />
             </div>
           ))}
@@ -47,7 +51,7 @@ function ProductView({ products }) {
           <button
             onClick={previousPage}
             disabled={currentPage === 1}
-            className={`bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`bg-gray-700 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             Anterior
           </button>
@@ -65,7 +69,7 @@ function ProductView({ products }) {
           <button
             onClick={nextPage}
             disabled={currentPage === totalPages}
-            className={`bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`bg-gray-700 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             Siguiente
           </button>

@@ -1,172 +1,38 @@
 function ReportView() {
     return (
-        <div>
-            <div class="flex flex-col">
-                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div class="inline-block min-w-full sm:px-6 lg:px-8">
-                        <div class="overflow-hidden">
-                            <table class="min-w-full text-gray-500">
-                                <thead class="bg-gray-50">
+        <div className="bg-white p-6 rounded-md shadow-md mb-4 border border-black">
+            <div className="flex flex-col">
+                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div className="inline-block min-w-full sm:px-6 lg:px-8">
+                        <div className="overflow-hidden">
+                            <table className="min-w-full text-gray-500">
+                                <thead className="bg-gray-50 border border-black">
                                     <tr>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
-                                            Fecha
-                                        </th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
-                                            Día
-                                        </th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
-                                            Subtotal
-                                        </th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
-                                            Descuento
-                                        </th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
-                                            Total
-                                        </th>
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-black">Fecha</th>
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-black">Día</th>
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-black">Subtotal</th>
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-black">Descuento</th>
+                                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-black">Total</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="bg-white border-b">
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b">
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b">
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b">
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white border-b">
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                        <td class="px-6 py-4 whitespace-nowrap">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                <div class="bg-gray-300 rounded-full h-2 w-24"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                <tbody className="border border-black">
+                                    {[...Array(5)].map((_, index) => (
+                                        <tr key={index} className="bg-white border border-black">
+                                            {['Fecha', 'Día', 'Subtotal', 'Descuento', 'Total'].map((col, idx) => (
+                                                <td key={idx} className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="text-sm font-medium text-gray-900">
+                                                        <div className="bg-gray-300 rounded-full h-4 w-32"></div>
+                                                    </div>
+                                                </td>
+                                            ))}
+                                        </tr>
+                                    ))}
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div class="text-gray-600 text-xs mt-2">
+                <div className="text-gray-600 text-xs mt-2">
                     Mostrando 5 de 20 registros
                 </div>
             </div>
@@ -174,4 +40,4 @@ function ReportView() {
     );
 }
 
-export default ReportView
+export default ReportView;

@@ -30,12 +30,16 @@ function CajaPage() {
         });
     };
 
+    const removeFromTicket = (productId) => {
+        setTicketItems((prevItems) => prevItems.filter(item => item.id !== productId));
+    };
+
     return (
         <div className='h-full'>
             <div className="p-4">
                 <div className="flex bg-gray-200 rounded-lg p-4">
                     <div className="w-5/12">
-                        <TicketView ticketItems={ticketItems} />
+                        <TicketView ticketItems={ticketItems} removeFromTicket={removeFromTicket} />
                     </div>
                     <div className="w-7/12">
                         <ProductView products={products} addToTicket={addToTicket} />

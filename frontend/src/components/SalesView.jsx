@@ -1,63 +1,67 @@
 function SalesView() {
     return (
-        <div>
-            <div class="flex gap-4">
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <h2 class="text-lg font-medium">Productos más vendidos</h2>
-                        <button class="bg-gray-200 px-2 py-1 rounded-md text-xs">Mostrar</button>
+        <div className="bg-white p-6 rounded-md">
+            <div className="flex gap-4">
+                <div className="flex flex-col gap-2 flex-1">
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-lg font-medium">Productos más vendidos</h2>
+                        <button className="bg-gray-200 px-2 py-1 rounded-md text-xs">Mostrar</button>
                     </div>
 
-                    <table class="table-auto w-full">
-                        <thead>
+                    <table className="table-auto w-full border border-black">
+                        <thead className="border border-black">
                             <tr>
-                                <th class="px-4 py-2">Nombre</th>
-                                <th class="px-4 py-2">Cantidad</th>
+                                <th className="px-4 py-2">Nombre</th>
+                                <th className="px-4 py-2">Cantidad</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                            </tr>
+                            {[...Array(3)].map((_, index) => (
+                                <tr key={index}>
+                                    <td className="px-4 py-2">
+                                        <div className="flex justify-center items-center">
+                                            <span className="bg-gray-300 h-6 w-24 rounded-md"></span>
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-2">
+                                        <div className="flex justify-center items-center">
+                                            <span className="bg-gray-300 h-6 w-24 rounded-md"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>
 
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <h2 class="text-lg font-medium">Productos menos vendidos</h2>
-                        <button class="bg-gray-200 px-2 py-1 rounded-md text-xs">Mostrar</button>
+                <div className="flex flex-col gap-2 flex-1">
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-lg font-medium">Productos menos vendidos</h2>
+                        <button className="bg-gray-200 px-2 py-1 rounded-md text-xs">Mostrar</button>
                     </div>
 
-                    <table class="table-auto w-full">
-                        <thead>
+                    <table className="table-auto w-full border border-black">
+                        <thead className="border border-black">
                             <tr>
-                                <th class="px-4 py-2">Nombre</th>
-                                <th class="px-4 py-2">Cantidad</th>
+                                <th className="px-4 py-2">Nombre</th>
+                                <th className="px-4 py-2">Cantidad</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                                <td class="px-4 py-2"><span class="bg-gray-300 h-6 w-24 rounded-md inline-block"></span></td>
-                            </tr>
+                            {[...Array(3)].map((_, index) => (
+                                <tr key={index}>
+                                    <td className="px-4 py-2">
+                                        <div className="flex justify-center items-center">
+                                            <span className="bg-gray-300 h-6 w-24 rounded-md"></span>
+                                        </div>
+                                    </td>
+                                    <td className="px-4 py-2">
+                                        <div className="flex justify-center items-center">
+                                            <span className="bg-gray-300 h-6 w-24 rounded-md"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>
