@@ -3,7 +3,7 @@ import React from 'react';
 function SearchBar() {
     return (
         <div className="py-4">
-            <div className="grid grid-cols-5 gap-4">
+            <div className="grid grid-cols-5 gap-5">
                 <div className="col-span-1">
                     <label htmlFor="nombre" className="block text-sm font-medium text-gray-700">Nombre</label>
                     <input type="text" id="nombre" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
@@ -27,11 +27,9 @@ function SearchBar() {
                         <option>No Disponible</option>
                     </select>
                 </div>
-                <div className="col-span-1">
-                    <button type="button" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
-                        Consultar
-                    </button>
-                </div>
+                <button type="button" className="border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                    Consultar
+                </button>
             </div>
         </div>
     );

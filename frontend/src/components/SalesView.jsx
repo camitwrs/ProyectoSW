@@ -1,11 +1,10 @@
 function SalesView() {
     return (
-        <div className="bg-white p-6 rounded-md">
+        <div className="bg-white p-6 rounded-md shadow-md">
             <div className="flex gap-4">
                 <div className="flex flex-col gap-2 flex-1">
                     <div className="flex items-center justify-between">
                         <h2 className="text-lg font-medium">Productos más vendidos</h2>
-                        <button className="bg-gray-200 px-2 py-1 rounded-md text-xs">Mostrar</button>
                     </div>
 
                     <table className="table-auto w-full border border-black">
@@ -37,7 +36,6 @@ function SalesView() {
                 <div className="flex flex-col gap-2 flex-1">
                     <div className="flex items-center justify-between">
                         <h2 className="text-lg font-medium">Productos menos vendidos</h2>
-                        <button className="bg-gray-200 px-2 py-1 rounded-md text-xs">Mostrar</button>
                     </div>
 
                     <table className="table-auto w-full border border-black">

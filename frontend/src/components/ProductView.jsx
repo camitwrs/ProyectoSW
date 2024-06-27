@@ -28,7 +28,7 @@ function ProductView({ products, addToTicket }) {
   return (
     <div className="container mx-auto p-4 border-black">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Vista productos</h1>
+        <h2 className="text-l font-bold">VISTA DE PRODUCTOS</h2>
         <select name="" id="" className="rounded">
           <option value="">Todas las categorías</option>
           <option value="">Snack</option>

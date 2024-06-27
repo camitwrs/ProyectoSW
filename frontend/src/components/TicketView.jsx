@@ -10,7 +10,9 @@ function TicketView({ ticketItems, removeFromTicket }) {
 
     return (
         <div className="flex flex-col h-full p-4">
+            <h1 className="text-xl mb-3 font-bold">REALIZAR VENTA</h1>
             <div className="flex flex-col space-y-2 p-4 border-2 border-black rounded-lg">
+                
                 <div className="flex items-center space-x-2">
                     <h1>Escanear producto:</h1>
                     <button>

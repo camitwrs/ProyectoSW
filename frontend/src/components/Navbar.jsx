@@ -20,7 +20,7 @@ function Navbar(props) {
         <div className="text-2xl font-bold">
           FULL$TOCK
         </div>
-        <div className="relative">
+        <div className="relative mr-2">
           <button onClick={handleUserClick} className="flex items-center gap-2" >
             <HiUserCircle className="size-8" />
             <span className="text-sm font-medium">{props.username}</span>

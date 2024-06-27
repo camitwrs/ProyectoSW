@@ -14,6 +14,7 @@ function CajaPage() {
         { id: 6, name: "Producto 6", code: "456", price: 600, image: 'path/to/image6.jpg' },
         { id: 7, name: "Producto 7", code: "456", price: 700, image: 'path/to/image7.jpg' },
         { id: 8, name: "Producto 8", code: "456", price: 800, image: 'path/to/image8.jpg' },
+        { id: 9, name: "Producto 9", code: "456", price: 900, image: 'path/to/image9.jpg' },
         { id: 9, name: "Producto 9", code: "456", price: 900, image: 'path/to/image9.jpg' }
         // Agrega más productos aquí...
     ];
@@ -37,7 +38,7 @@ function CajaPage() {
     return (
         <div className='h-full'>
             <div className="p-4">
-                <div className="flex bg-gray-200 rounded-lg p-4">
+                <div className="flex bg-gray-100 rounded-lg p-4">
                     <div className="w-5/12">
                         <TicketView ticketItems={ticketItems} removeFromTicket={removeFromTicket} />
                     </div>

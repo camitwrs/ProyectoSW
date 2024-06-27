@@ -6,7 +6,8 @@ import RecordsInfo from '../components/RecordsInfo';
 
 function InventarioPage() {
     return (
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 bg-gray-100">
+            <h1 className="text-xl font-bold py-4">INVENTARIO</h1>
             <SearchBar />
             <InventoryTable />
             <InventoryPagination />
