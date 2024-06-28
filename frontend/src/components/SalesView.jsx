@@ -15,7 +15,7 @@ function SalesView() {
                             </tr>
                         </thead>
                         <tbody>
-                            {[...Array(3)].map((_, index) => (
+                            {[...Array(2)].map((_, index) => (
                                 <tr key={index}>
                                     <td className="px-4 py-2">
                                         <div className="flex justify-center items-center">
@@ -46,7 +46,7 @@ function SalesView() {
                             </tr>
                         </thead>
                         <tbody>
-                            {[...Array(3)].map((_, index) => (
+                            {[...Array(2)].map((_, index) => (
                                 <tr key={index}>
                                     <td className="px-4 py-2">
                                         <div className="flex justify-center items-center">

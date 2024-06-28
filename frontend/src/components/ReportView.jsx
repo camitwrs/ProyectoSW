@@ -16,7 +16,7 @@ function ReportView() {
                                     </tr>
                                 </thead>
                                 <tbody className="border border-black">
-                                    {[...Array(5)].map((_, index) => (
+                                    {[...Array(3)].map((_, index) => (
                                         <tr key={index} className="bg-white border border-black">
                                             {['Fecha', 'Día', 'Subtotal', 'Descuento', 'Total'].map((col, idx) => (
                                                 <td key={idx} className="px-6 py-4 whitespace-nowrap">

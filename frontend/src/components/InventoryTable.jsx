@@ -17,7 +17,7 @@ function InventoryTable() {
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                        {Array.from({ length: 8 }).map((_, index) => (
+                        {Array.from({ length: 4 }).map((_, index) => (
                             <tr key={index}>
                                 <td className="px-6 py-4 whitespace-nowrap">
                                     <div className="text-sm text-gray-900">Nombre {index + 1}</div>
